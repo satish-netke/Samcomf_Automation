@@ -38,7 +38,9 @@ public class test
         
     	//driver.findElement(By.xpath("//div[@class=\"input-area pin-box text-center jpa\"]"));
     	
-    	driver.findElement(By.xpath("//a[@id=\"sendotpforpin\"]")).click();  
+    	driver.findElement(By.xpath("//a[@id=\"sendotpforpin\"]")).click(); 
+    	
+    	System.err.println("Pin Entered Succesffully");
     }
 }
 //input[@type='password']
