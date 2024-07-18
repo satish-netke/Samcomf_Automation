@@ -17,5 +17,28 @@ public class test2
     	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     	driver.get("https://dev.samcomf.com/");
     	driver.findElement(By.linkText("Conditions of Use")).click();
-}
+//    	driver.findElement(By.xpath("//a[@href=\"https://dev.samcomf.com/investor/login\"]")).click();  
+//    	driver.findElement(By.xpath("//input[@id=\"enterPan\"]")).sendKeys("BCPPN3680K");
+//    	driver.findElement(By.xpath("//a[@id=\"checkLoginBtn\"]")).click();
+//    	//Thread.sleep(4000);
+//    	
+//        WebDriverWait wait = new WebDriverWait(driver, 15); // 10 seconds timeout
+//        WebElement firstDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='password']")));
+//        WebElement secondDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='password'])[2]")));
+//        WebElement thirdDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='password'])[3]")));
+//        WebElement fourthDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='password'])[4]")));
+//
+//        firstDigitInput.sendKeys("1");
+//        secondDigitInput.sendKeys("2");
+//        thirdDigitInput.sendKeys("1");
+//        fourthDigitInput.sendKeys("2");
+//
+//        
+//        
+//    	//driver.findElement(By.xpath("//div[@class=\"input-area pin-box text-center jpa\"]"));
+//    	
+//    	driver.findElement(By.xpath("//a[@id=\"sendotpforpin\"]")).click(); 
+//    	
+//    	System.err.println("Pin Entered Succesffully");
     }
+}

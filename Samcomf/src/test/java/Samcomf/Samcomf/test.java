@@ -23,7 +23,7 @@ public class test
     	driver.findElement(By.xpath("//a[@id=\"checkLoginBtn\"]")).click();
     	//Thread.sleep(4000);
     	
-        WebDriverWait wait = new WebDriverWait(driver, 15); // 10 seconds timeout
+        WebDriverWait wait = new WebDriverWait(driver, 15); // 15 seconds timeout
         WebElement firstDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='password']")));
         WebElement secondDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='password'])[2]")));
         WebElement thirdDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='password'])[3]")));
@@ -43,6 +43,7 @@ public class test
     	System.err.println("Pin Entered Succesffully");
     }
 }
+// 	driver.findElement(By.linkText("Conditions of Use")).click();
 //input[@type='password']
 //div[@class="input-area pin-box text-center jpa"]
 //div[@class=\"input-area pin-box text-center jpa\"]
