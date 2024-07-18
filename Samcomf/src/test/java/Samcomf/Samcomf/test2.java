@@ -2,6 +2,7 @@ package Samcomf.Samcomf;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -15,5 +16,6 @@ public class test2
     	driver.manage().window().maximize();
     	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     	driver.get("https://dev.samcomf.com/");
+    	driver.findElement(By.linkText("Conditions of Use")).click();
 }
     }
