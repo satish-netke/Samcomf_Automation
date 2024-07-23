@@ -23,16 +23,18 @@ public class test
     	driver.findElement(By.xpath("//a[@id=\"checkLoginBtn\"]")).click();
     	//Thread.sleep(4000);
     	
-        WebDriverWait wait = new WebDriverWait(driver, 15); // 15 seconds timeout
-        WebElement firstDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='password']")));
-        WebElement secondDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='password'])[2]")));
-        WebElement thirdDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='password'])[3]")));
-        WebElement fourthDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='password'])[4]")));
-
-        firstDigitInput.sendKeys("1");
-        secondDigitInput.sendKeys("2");
-        thirdDigitInput.sendKeys("1");
-        fourthDigitInput.sendKeys("2");
+       //
+    	
+//    	WebDriverWait wait = new WebDriverWait(driver, 15); // 15 seconds timeout
+//        WebElement firstDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='password']")));
+//        WebElement secondDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='password'])[2]")));
+//        WebElement thirdDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='password'])[3]")));
+//        WebElement fourthDigitInput = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//input[@type='password'])[4]")));
+//
+//        firstDigitInput.sendKeys("1");
+//        secondDigitInput.sendKeys("2");
+//        thirdDigitInput.sendKeys("1");
+       // fourthDigitInput.sendKeys("2");
 
         
         
