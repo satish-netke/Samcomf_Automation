@@ -5,9 +5,9 @@
     <classes>
       <class name="Samcomf.Samcomf.LoginPageTest">
         <methods>
+          <include name="userEnteringPAN"/>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="UserEnteringPAN"/>
         </methods>
       </class> <!-- Samcomf.Samcomf.LoginPageTest -->
     </classes>

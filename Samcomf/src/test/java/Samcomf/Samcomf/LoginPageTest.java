@@ -1,31 +1,33 @@
 package Samcomf.Samcomf;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginPageTest extends Samcomf.Samcomf.BaseClass
 {
-  Pages.LoginPage LoginPage;
+  Pages.LoginPage loginPage;
   
   @BeforeMethod
 public void setup()
 {
-	LoginPage = new Pages.LoginPage(driver);
+	loginPage = new Pages.LoginPage(driver);
 	OpenBrowser();	
 }
   
-@Test
-  public void UserEnteringPAN() throws InterruptedException
+  @Test
+  public void userEnteringPAN() throws InterruptedException
   {
-	  LoginPage.enterPan("BCPPN3680K");
-	  LoginPage.ContinueButton();
+	  loginPage.enterPan("BCPPN3680K");
+	  loginPage.continueButton();
   }
 
-@AfterMethod
-public void teardown()
-{
-     driver.close();	
+  @AfterMethod
+public void teardown() throws InterruptedException
+{		
+	  Thread.sleep(1500);
+      driver.close();	
 }
 
 }
